@@ -21,5 +21,17 @@ const onBoardingPage3SubTitle =
 const onBoardingPage3CounterText = '3/3';
 
 // Welcome Page Texts
-const welcomePageTitle = 'Get Fit with Fitmess';
-const welcomePageSubTitle = 'Get your body in shape, eat healthy and stay fit';
+const welcomePageTitle = 'Build Awesome Apps';
+const welcomePageSubTitle =
+    'Let\'s put your creativity on the development highway.';
+
+// Login Screen Texts
+const mLoginTitle = 'Welcome Back!';
+const mLoginSubTitle = 'Make it work, Make it right, Make it fast';
+const mLoginRememberMeText = 'Remember Me?';
+const mLoginAlreadyHaveAnAccountText = 'Already have an account?';
+const mLoginForgotPasswordText = 'Forgot Password?';
+const mLoginEmail = 'Email';
+const mLoginPassword = 'Password';
+const mLoginEmailHint = 'Enter your email';
+const mLoginPasswordHint = 'Enter your password';

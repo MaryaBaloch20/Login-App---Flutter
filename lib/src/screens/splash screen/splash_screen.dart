@@ -32,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: const [
                 Text(
-                  "FITMESS",
+                  "LOGIN APP",
                   style: TextStyle(
                       color: brownColor,
                       fontSize: 30,

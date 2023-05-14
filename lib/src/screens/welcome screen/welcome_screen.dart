@@ -3,6 +3,9 @@ import 'package:login_app_authentication_firebase/src/constants/image_strings.da
 import 'package:login_app_authentication_firebase/src/constants/sizes.dart';
 import 'package:login_app_authentication_firebase/src/constants/text_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import '../login/login_page.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -19,7 +22,7 @@ class WelcomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Image(
-                image: const AssetImage(welcome_image),
+                image: const AssetImage(mLoginImage),
                 height: height * 0.5,
               ),
               Column(
@@ -43,7 +46,9 @@ class WelcomeScreen extends StatelessWidget {
                 children: [
                   Expanded(
                     child: OutlinedButton(
-                      onPressed: () {},
+                      onPressed: () => Get.to(
+                        () => const LoginScreen(),
+                      ),
                       style: OutlinedButton.styleFrom(
                         shape: const RoundedRectangleBorder(),
                         side: const BorderSide(color: blackColor),

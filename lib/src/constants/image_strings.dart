@@ -12,3 +12,7 @@ const String broccoli_image = 'assets/images/broccoli.png';
 
 //Welcome Screen Image
 const String welcome_image = 'assets/images/welcome1.png';
+const String mLoginImage = 'assets/images/login page.png';
+
+//Logo Images
+const String mGoogleLogoImage = 'assets/images/google logo.png';

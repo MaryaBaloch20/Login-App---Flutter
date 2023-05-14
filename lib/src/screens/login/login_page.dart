@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login_app_authentication_firebase/src/constants/sizes.dart';
 import 'package:login_app_authentication_firebase/src/screens/login/login_form_widget.dart';
+import 'package:login_app_authentication_firebase/src/screens/login/login_header_widget.dart';
 
 import '../../constants/colors.dart';
 import '../../constants/image_strings.dart';
@@ -21,26 +22,10 @@ class LoginScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Section 1
-                Image(
-                  image: const AssetImage(mLoginImage),
-                  height: size.height * 0.2,
-                ),
-                const Text(
-                  mLoginTitle,
-                  style: TextStyle(
-                      fontSize: 34.0,
-                      fontWeight: FontWeight.w700,
-                      color: blackColor),
-                ),
-                const Text(mLoginSubTitle,
-                    style: TextStyle(
-                        fontSize: 18.0,
-                        fontWeight: FontWeight.normal,
-                        color: blackColor),
-                    textAlign: TextAlign.center),
+                // Header
+                LoginHeaderWidget(size: size),
 
-                // Section 2
+                //Form
                 const LoginForm()
               ],
             ),
